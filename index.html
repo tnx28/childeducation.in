@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Children's Education</title>
+
+	<!-- Required meta tags -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Bootstrap css-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!--jQuery-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <!--FontAwesomeIcons-->
+  <link rel="stylesheet" type="text/css"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!--Google Fonts-->
+ <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+ <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+
+<style>
+
+body {
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+	background-color: black;
+	opacity: .8;
+	border:none;
+	
+}
+.glyphicon-education{
+	color: #fff;
+	font-size: 35px;
+
+
+}
+.navbar-brand{
+	margin-bottom: 5px;
+}
+.nav{
+	padding-left: 50%;
+}
+.navcontent{
+	font-family: Baloo;
+	font-size: 17px;
+}
+.time{
+	color: #fff;
+	padding-left: 60%;
+	padding-top: 15px;
+}
+.navcontent:hover{
+	background-color: #00BFFF;
+}
+.mainview{
+	background: url("smile.jpg");
+	padding: none;
+}
+.main1{
+	color: #fff;
+	margin-top: 100px;
+	
+}
+.edu{ 
+	font-size:50px;
+	padding-left: 20px;
+
+}
+.study{
+	font-family: Bai Jamjuree;
+	font-weight: lighter;
+	font-size: 45px;
+	word-spacing: 3px;
+	padding-left: 20px;
+}
+.thought{
+	font-size: 22px;
+	font-family: Athiti;
+	word-spacing: 2px;
+	padding-left: 20px;
+}
+.btn1{
+	color: #fff;
+	border:1px solid #fff;
+	border-radius: 2px;
+	padding:10px;
+	background-color: #0000ff;
+	opacity: .8;
+	font-family:Allerta ;
+	font-size: 20px;
+	margin-left: 100px;
+	margin-top: 20px;
+}  
+.btn1:hover{
+	background-color: #000;
+	opacity: .7;
+
+}
+#regForm {
+  background-color: #d5d5d5;
+  margin: 100px auto;
+  margin-top: 200px;
+  font-family: Raleway;
+  padding: 40px;
+  width: 50%;
+  min-width: 300px;
+  height: 400px;
+}
+
+h1 {
+  text-align: center; 
+  font-family: Raleway; 
+  font-size: 30px;
+  color: #000;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #0000ff;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #00ffff;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  font-size: 20px;
+  color: #000;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Athiti;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #000;
+  border: 1px solid #ffffff;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+#nextBtn{
+  background: blue;
+}
+.readmore{
+	background-color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.build{
+	text-align: center;
+	font-size: 35px;
+	color: #000;
+	font-family: Fugaz One;
+	word-spacing: 1px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 23%;
+  margin-left: 23px;
+ box-shadow: 5px 7px 9px -3px rgba(0,0,0,0.7);
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+
+  }
+}
+
+.card{
+	text-align: center;
+  position: relative;
+  max-width: 800px;
+  width: 275px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.card .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.th1{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-family: Athiti;
+	font-size: 20px;
+	color: #00008b;
+	padding: 10px;
+}
+.th2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: Athiti;
+	font-size: 20px;
+	color: #000;
+	padding: 10px;
+}
+.fa-file-text-o{
+	margin-top: 25px;
+	color: #000;
+	font-size: 70px;
+}
+.fa-cogs{
+	margin-top: 25px;
+	color: #000;
+	font-size: 70px;
+
+}
+.fa-universal-access{
+	margin-top: 25px;
+	color: #00008b;
+	font-size: 70px;
+
+}
+.fa-thermometer-empty{
+	margin-top: 25px;
+	color: #00008b;
+	font-size: 70px;
+
+}
+.ser{
+	font-size: 40px;
+	color: #000;
+	padding-left: 50px;
+	font-family: Baloo;
+}
+.statt{
+	font-size: 40px;
+	color: #fff;
+	padding-left: 50px;
+	font-family: Baloo;
+	margin-top: 40px;
+}
+.data{
+	padding-left: 10px;
+	margin-top: 50px;
+
+}
+.serv{
+	border:2px solid #00008b;
+	margin-left: 10px;
+	height: 200px;
+	width: 300px;
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+.serv:hover{
+	border:2px solid #fff;
+	background-color: #d5d5d5;
+}
+.lead{
+	text-align: left;
+	width: 50px;
+	background-color: #00008b;
+	height: 1px;
+}
+.head{
+	color: #000;
+	font-family: Amaranth;
+}
+.para{
+	font-size: 18px;
+	font-family: Athiti;
+	color: #000;
+}
+.fa-handshake-o{
+	padding: 5px;
+	font-size: 35px;
+	color: #00008b;
+}
+.fa-users{
+	padding: 5px;
+	font-size: 35px;
+	color: #00008b;
+}
+.fa-home{
+	padding: 5px;
+	font-size: 35px;
+	color: #00008b;
+}
+.fa-certificate{
+	padding: 5px;
+	font-size: 35px;
+	color: #00008b;
+}
+.fa-superpowers{
+	padding: 5px;
+	font-size: 35px;
+	color: #00008b;
+}
+.fa-search-plus{
+	padding: 5px;
+	font-size: 35px;
+	color: #00008b;
+}
+#stat{
+	background-color: #191970;
+}
+.statistics{
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+.st{
+	border:1px solid #fff;
+	height: 250px;
+	width: 250px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+
+}
+.st:hover{
+	border:1px solid #fff;
+	background-color: #00BFFF;
+	opacity: .7;
+}
+.number{
+	color: #fff;
+	font-size: 35px;
+}
+.text{
+	color: #fff;
+	font-size: 20px;
+	opacity: .7;
+}
+.fa-list-ul{
+	color: #fff;
+	font-size: 30px;
+	background-color: #000;
+	border:1px solid #fff;
+	border-radius: 50%;
+	padding: 20px;
+	margin-top: 20px;
+}
+.fa-user-o{
+	color: #fff;
+	font-size: 30px;
+	background-color: #000;
+	border:1px solid #fff;
+	border-radius: 50%;
+	padding: 20px;
+	margin-top: 20px;
+}
+.fa-usd{
+	color: #fff;
+	font-size: 30px;
+	background-color: #000;
+	border:1px solid #fff;
+	border-radius: 50%;
+	padding: 20px;
+	margin-top: 20px;
+}
+.fa-television{
+	color: #fff;
+	font-size: 30px;
+	background-color: #000;
+	border:1px solid #fff;
+	border-radius: 50%;
+	padding: 20px;
+	margin-top: 20px;
+}
+.choose{
+	font-size: 40px;
+	color: #000;
+	padding-left: 50px;
+	font-family: Baloo;
+	margin-top: 40px;
+}
+.box{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.why{
+	margin-bottom: 40px;
+	height: 410px;
+	width: 350px;
+	box-shadow: 5px 7px 9px -3px rgba(0,0,0,0.3);
+}
+.title{
+	font-size: 30px;
+	font-family:Amaranth; 
+}
+.line{
+	font-family: Athiti;
+	font-size: 20px;
+	word-spacing: 1px;
+}
+.parentsection{
+	padding-bottom: 50px;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("parent.jpg");
+  	background-size: cover;
+  	background-position: center;
+  	color: #fff !important;
+}
+.what{
+	font-size: 40px;
+	color: #fff;
+	padding-left: 50px;
+	font-family: Baloo;
+	margin-top: 60px;
+}
+.best{
+	padding-left: 20px;
+	padding-top: 40px;
+	font-size: 30px;
+	font-weight: lighter;
+	font-family: Athiti;
+}
+.best1{
+	padding-left: 20px;
+	padding-top: 150px;
+	font-size: 30px;
+	font-weight: lighter;
+	font-family: Athiti;
+}
+.pt{
+	padding-left: 10px;
+	font-size: 20px;
+	font-family: Athiti;
+	text-align: center;
+	padding-top: 10px;
+}
+.pt1{
+	padding-left: 10px;
+	font-size: 20px;
+	font-family: Athiti;
+	text-align: center;
+	padding-top: 10px;
+}
+.avatar {
+  vertical-align: middle;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+.yk{
+	font-family: Athiti;
+	font-size: 16px;
+	padding-left: 50px;
+	text-transform: uppercase;
+}
+
+.tea{
+	font-size: 40px;
+	color: #000;
+	font-family: Baloo;
+	margin-top: 60px;
+}
+.teach{
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.prof{
+	box-shadow: 5px 7px 9px -3px rgba(0,0,0,0.1);
+	margin-bottom: 20px;
+}
+.prof:hover{
+	box-shadow: 5px 7px 9px -3px rgba(0,0,0,0.4);
+}
+.fd{
+	font-family: Amaranth;
+	font-size: 22px;
+}
+.con{
+	background-color: #000;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-bottom: 10px;
+	color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+.fa-instagram{
+	font-size: 25px;
+	padding: 5px;
+	color: #000;
+}
+.fa-instagram:hover{
+	color: #ddd;
+}
+.fa-twitter{
+	font-size: 25px;
+	padding: 5px;
+	color: #000;
+}
+.fa-twitter:hover{
+	color:#ddd;
+}
+.fa-facebook{
+	font-size: 25px;
+	padding: 5px;
+	color: #000;
+}
+.fa-facebook:hover{
+	color:#ddd;
+}
+.fa-linkedin{
+	font-size: 25px;
+	padding: 5px;
+	color: #000;
+}
+.fa-linkedin:hover{
+	color:#ddd;
+}
+.foott{
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("main.jpg");
+  	background-size: cover;
+  	background-position: center;
+  	color: #fff !important;
+
+
+}
+.foot{
+	color: #fff;
+	font-family: Shojumaru;
+	font-size: 30px;
+	margin-top: 50px;
+}
+.last{
+	font-size: 20px;
+	text-align: center;
+	font-family: Athiti;
+	word-spacing: 2px;
+	color: #fff;
+	margin-top: 40px;
+}
+.icons{
+	margin-top: 30px;
+}
+.end{
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("book.jpg");
+  	background-size: cover;
+  	background-position: center;
+  	color: #fff !important;
+
+}
+.fa-arrow-circle-o-up{
+	text-align: center;
+}
+.theend{
+	background-color: #2f4f4f;
+	color: #fff !important;
+}
+</style>
+
+</head>
+<body>
+
+	<!--navigation menu-->
+<section id="navbar">
+	<div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+
+      <a class="navbar-brand" href="#" style="color: yellow;font-size: 25px;font-family:Shojumaru;"><span class="glyphicon glyphicon-education"></span> CHILD'S LEARN</a>
+    </div>
+    	 <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="navcontent"><a href="#main" style="color: #fff;">HOME</a></li>
+            <li class="navcontent"><a href="#whyus" style="color: #fff;">ABOUT</a></li>
+            <li class="navcontent"><a href="#services" style="color: #fff;">SERVICES</a></li>
+            <li class="navcontent"><a href="#stat" style="color: #fff;">STAT</a></li>
+            <li class="navcontent"><a href="#parents" style="color: #fff;">TESTIMONIALS</a></li>
+            <li class="navcontent"><a href="#teachers" style="color: #fff;">TEACHERS</a></li>    
+          </ul>
+       </div>     
+  </div>
+</nav>
+</div>
+</section>
+<!--navigation menu end-->
+
+<!--Mainview-->
+
+<section id="main">
+<div class="container-fluid">
+  <div class="mainview row">
+
+    <div class="main1 col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+    	<p class="edu"><b>Education Courses.</b></p>
+		<h2 class="study">Study For Better Future</h2>
+		<p class="thought">Education is the key to success in life, and teachers make a lasting impact in the lives of their students.</p>
+		<button class="btn1">Read More</button>
+     </div>
+
+	<div class="main2 col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+     <form id="regForm" name="frm" method="post" action="#">
+  <h1>Register Here</h1>
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">Name:
+    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+  </div>
+  <div class="tab">Contact Info:
+    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+  </div>
+  <div class="tab">Address:
+    <p><input placeholder="city" oninput="this.className = ''" name="city"></p>
+    <p><input placeholder="district" oninput="this.className = ''" name="district"></p>
+    <p><input placeholder="post with pin" oninput="this.className = ''" name="post"></p>
+  </div>
+  <div class="tab">Login Info:
+    <p><input placeholder="Username..." oninput="this.className = ''" name="username"></p>
+    <p><input placeholder="Password..." oninput="this.className = ''" name="password" type="password"></p>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+ 
+    </div>
+  </div>
+</div>
+</section>
+<hr>
+<!--Read More Section-->
+<section id="read">
+	<div class="container-fluid">
+  <div class="readmore row">
+  	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+  	<p class="build">Build Your Career With Our Education System</p>
+  	</div>
+  </div>
+</div>
+	<div class="container">
+  	<div class="row">
+  <div class="column">
+    <div class="card">
+      <img style="height: 300px;width: 275px;" src="facillities.jpg">
+      <div class="content">
+      	<h2>Facillities</h2>
+      	<h4>Education</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img style="height: 300px;width: 275px;" src="graduation.jpg">
+      <div class="content">
+      	<h2>Graduation</h2>
+      	<h4>Education</h4>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img style="height: 300px;width: 275px;" src="learn.jpg">
+      <div class="content">
+      	<h2>Learning</h2>
+      	<h4>Education</h4>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img style="height: 300px;width: 275px;" src="success.jpg">
+      <div class="content">
+      	<h2>Success</h2>
+      	<h4>Education</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="th1 col-sm-10 col-xs-10 col-md-5 col-lg-5 col-xl-5">
+		<p>“Let us think of education as the means of developing our greatest abilities, because in each of us there is a private hope and dream which, fulfilled, can be translated into benefit for everyone and greater strength for our nation.”<br> <b>-John F. Kennedy</b></p></div>
+		<div class="col-sm-2 col-xs-2 col-md-1 col-lg-1 col-xl-1">
+			<i class="fa fa-file-text-o" aria-hidden="true"></i><br>
+		 <i class="fa fa-cogs" aria-hidden="true"></i>	
+		</div>
+
+
+		
+		<div class="th2 col-sm-10 col-xs-10 col-md-5 col-lg-5 col-xl-5">
+		<p> "The essential aim of...the most democratic movements we have is to train ourselves, to learn how to use the work of experts, to find our will, to educate our will, to integrate our wills...it is of equal importance with the discovery of facts to know what to do with them..in politics we do not keep these different kinds of information apart..." <br> <b>-Mary Parker Follett</b></p>	
+		</div>
+		<div class="col-sm-2 col-xs-2 col-md-1 col-lg-1 col-xl-1">
+			<i class="fa fa-universal-access" aria-hidden="true"></i><br><br><br>
+			<i class="fa fa-thermometer-empty" aria-hidden="true"></i>	
+		</div>
+		
+		
+	</div>
+	
+</div>
+</div>
+</section>
+<hr>
+ 
+ <!--Services Section-->
+
+ <section id="services">
+ 	<div class="container-fluid">
+  <div class="row">
+  	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+  	<p class="ser">Our Services</p>
+  	</div>
+  </div>
+</div>
+
+ 	<div class="container-fluid">
+ 		<div class="row">
+
+ 			<div class="png col-sm-12 col-xs-12 col-md-3 col-lg-3 col-xl-3">
+ 				<img src="chi.jpg">
+ 			</div>
+ 			
+ 			<div class="data col-sm-6 col-xs-6 col-md-9 col-lg-9 col-xl-9">
+ 				<div class="card serv col-md-3 col-lg-3 col-xl-3">
+ 					<i class="fa fa-handshake-o" aria-hidden="true"></i><h3 class="head">QUALITY EDUCATION</h3>
+ 					<hr class="lead">
+ 					<p class="para">Proin varius pellentesque nunc tincidunt ante. Init id lacus</p>
+ 				</div>
+
+ 				<div class="card serv col-md-3 col-lg-3 col-xl-3">
+ 					<i class="fa fa-users" aria-hidden="true"></i><h3 class="head">EXPERIENCED STAFF</h3>
+ 					<hr class="lead">
+ 					<p class="para">Proin varius pellentesque nunc tincidunt ante. Init id lacus</p>
+ 				</div>
+
+ 				<div class="card serv col-md-3 col-lg-3 col-xl-3">
+ 					<i class="fa fa-home" aria-hidden="true"></i><h3 class="head">AC CLASSROOMS</h3>
+ 					<hr class="lead">
+ 					<p class="para">Proin varius pellentesque nunc tincidunt ante. Init id lacus</p>
+ 				</div>
+
+ 				<div class="card serv col-md-3 col-lg-3 col-xl-3">
+ 					<i class="fa fa-certificate" aria-hidden="true"></i><h3 class="head"> STUDY CERTIFICATE</h3>
+ 					<hr class="lead">
+ 					<p class="para">Proin varius pellentesque nunc tincidunt ante. Init id lacus</p>
+ 				</div>
+
+ 				<div class="card serv col-md-3 col-lg-3 col-xl-3">
+ 					<i class="fa fa-superpowers" aria-hidden="true"></i><h3 class="head">STUDY MATERIALS</h3>
+ 					<hr class="lead">
+ 					<p class="para">Proin varius pellentesque nunc tincidunt ante. Init id lacus</p>
+ 				</div>
+
+ 				<div class="card serv col-md-3 col-lg-3 col-xl-3">
+ 					<i class="fa fa-search-plus" aria-hidden="true"></i><h3 class="head"> LIBRARY BOOKS</h3>
+ 					<hr class="lead">
+ 					<p class="para">Proin varius pellentesque nunc tincidunt ante. Init id lacus</p>
+ 				</div>
+			</div>
+ 			</div>
+ 		</div>
+ 	
+ </section>
+
+ <!--Statistics section-->
+
+<section id="stat">
+	<div class="container-fluid">
+  <div class="row">
+  	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+  	<p class="statt">Our Statistics</p>
+  	</div>
+  </div>
+</div>
+
+	<div class="container">
+		<div class="row">
+		<div class="statistics col-xs-12 col-sm-12">
+ 				<div class="card st col-sm-3">
+ 					<i class="fa fa-list-ul" aria-hidden="true"></i>
+ 					<h3 class="number">1568</h3>
+ 					<p class="text">Students Enrolled</p>
+ 				</div>
+
+ 				<div class="card st col-sm-3">
+ 					<i class="fa fa-user-o" aria-hidden="true"></i>
+ 					<h3 class="number">286</h3>
+ 					<p class="text">Professional Teachers</p>
+ 				</div>
+
+ 				<div class="card st col-sm-3">
+ 					<i class="fa fa-usd" aria-hidden="true"></i>
+ 					<h3 class="number">1422</h3>
+ 					<p class="text">Classes Conducted</p>
+ 				</div>
+
+ 				<div class="card st col-sm-3">
+ 					<i class="fa fa-television" aria-hidden="true"></i>
+ 					<h3 class="number">403</h3>
+ 					<p class="text">Media Followers</p>
+ 				</div>
+	
+		</div>
+
+	</div>
+	
+</section>
+
+<!--Why choose us-->
+<section id="whyus">
+	<div class="container-fluid">
+  <div class="row">
+  	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+  	<p class="choose">Why Choose Us</p>
+  	</div>
+  </div>
+</div>
+
+	<div class="container padding">
+  <div class="box row">
+
+    <div class="why col-lg-4 text-center">
+  <img src="ac.jpg" alt="tnx" style="width:330px;height: 225px;" >
+      <h1 class="title">AC CLASS ROOMS</h1>
+        <p class="line">Onec consequat sapien amet leo cur sus rhoncus. Nullam dui mi Donec at nunc enim. Proin at iaculis tellus...</p>
+  </div>
+
+  <div class="why col-lg-4 text-center">
+  <img src="staff.jpg" alt="tnx" style="width:330px; height: 225px;" >
+      <h1 class="title">QUALITY STAFF</h1>
+        <p class="line">Onec consequat sapien amet leo cur sus rhoncus. Nullam dui mi Donec at nunc enim. Proin at iaculis tellus...</p>
+  </div>
+
+<div class="why col-lg-4 text-center">
+  <img src="lib.jpg" alt="tnx" style="width:330px;height: 225px;" >
+      <h1 class="title">SPACIOUS LIBRARY</h1>
+        <p class="line">Onec consequat sapien amet leo cur sus rhoncus. Nullam dui mi Donec at nunc enim. Proin at iaculis tellus...</p>
+  </div>
+
+</div>
+</div>
+</section>
+
+<!--Parents section-->
+
+<section id="parents">
+	<div class="parentsection container-fluid">
+		<div class="row">
+
+			<div class="pts col-lg-6">
+				<h1 class="what">What Parents Say About Us</h1>
+				<h4 class="best">Best Education I Have Ever Seen</h4>
+				<p class="pt">""Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.Nulla quis lorem ut libero malesuada feugiat. Donec rutrum.""</p>
+				<img src="avatar1.jpg" alt="Avatar" class="avatar">
+				<h3 class="yk">Yogesh Patil</h3>
+			</div>
+			<div class="pts1 col-lg-6">
+			<h4 class="best1">Best Education I Have Ever Seen</h4>
+				<p class="pt1">""Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.Nulla quis lorem ut libero malesuada feugiat. Donec rutrum.""</p>
+				<img src="avatar2.jpg" alt="Avatar" class="avatar">
+				<h3 class="yk">Shruti Patil</h3>	
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<!--Our Teachers section-->
+
+<section id="teachers">
+	<div class="container">
+
+		<h1 class="tea">Our Teachers Staff</h1>
+
+		<div class="teach row">
+			
+	<div class="prof col-lg-3 text-center">
+  <img src="pankaj.jpg" alt="pankaj" style="width:100%; height: 225px;" >
+      <h3 class="fd">Pankaj Amale</h3>
+        <p>MATH'S TEACHER</p>
+      <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-instagram"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+       <a href="#"><button class="con">Contact</button></a>
+  </div>
+
+  <div class="prof col-lg-3 text-center">
+  <img src="v.jpg" alt="tnx" style="width:100%; height: 225px;" >
+      <h3 class="fd">Vaishnavi Nilkhan</h3>
+        <p>BIOLOGY TEACHER</p>
+      <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-instagram"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+       <a href="#"><button class="con">Contact</button></a>
+  </div>
+
+  <div class="prof col-lg-3 text-center">
+  <img src="yogesh.jpg" alt="tnx" style="width:100%;height: 225px;" >
+      <h3 class="fd">Yogesh Khedekar</h3>
+        <p>PHYSICS TEACHER</p>
+      <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-instagram"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+       <a href="#"><button class="con">Contact</button></a>
+  </div>
+
+  <div class="prof col-lg-3 text-center">
+  <img src="shruti.jpg" alt="tnx" style="width:100%;height: 225px;" >
+      <h3 class="fd">Shrutika Belsare</h3>
+        <p>CHEMISTRY TEACHER</p>
+      <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-instagram"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a>  
+          <a href="#"><i class="fa fa-linkedin"></i></a>  
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+       <a href="#"><button class="con">Contact</button></a>
+  </div>
+	</div>
+			
+	</div>
+		
+</div>
+</section>
+
+<!--Subscribe section-->
+<section id="footer">
+	<div class="foott container-fluid">
+		<div class="row">
+			<h1 class="foot"><span class="glyphicon glyphicon-education"></span>CHILD'S LEARN</h1>
+			<p class="last">Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur elit.</p>
+			<div class="icons" style="margin: 24px 0;text-align: center;margin-bottom: 40px;">
+          <a href="#"><i class="fa fa-instagram" style="color: #fff;"></i></a> 
+          <a href="#"><i class="fa fa-twitter" style="color: #fff;"></i></a>  
+          <a href="#"><i class="fa fa-linkedin" style="color: #fff;"></i></a>  
+          <a href="#"><i class="fa fa-facebook" style="color: #fff;"></i></a> 
+      </div>
+      
+		</div>
+		
+	</div>	
+</section>
+<hr>
+<!--Details Section-->
+<section id="details">
+	<footer>
+  <div class="end container-fluid padding">
+    <div class="row text-center">
+
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <p style="margin-top: 40px;"><span class="glyphicon glyphicon-education"><a href="#main" style="font-family:Shojumaru ;font-size: 30px; color: yellow;">CHILDS LEARN</a>
+    </p>
+        <hr class="light">
+        <p style="font-size: 22px;font-family:Athiti;"><i class="fa fa-phone" aria-hidden="true"></i>  
+        +91-9767147832</p>
+        <p style="font-size: 22px;font-family:Athiti;"><i class="fa fa-whatsapp" aria-hidden="true"></i>+91-8459645718</p>
+        <p style="font-size: 22px;font-family:Athiti;"><i class="fa fa-envelope-open" aria-hidden="true"></i>    childslearn@gmail.com</p>
+        <p style="font-size: 22px;font-family:Athiti;"><i class="fa fa-map-marker" aria-hidden="true"></i>   Akola,Maharashtra, 444001</p>
+      </div>
+
+
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <hr class="light">
+        <h5 style="font-size: 23px;font-family:Athiti;">Class Time</h5>
+        <hr class="light">
+        <p style="font-size: 22px;font-family:Athiti;">Monday:9am-5pm</p>
+        <p style="font-size: 22px;font-family:Athiti;">Saturday:11am-4pm</p>
+        <p style="font-size: 22px;font-family:Athiti;">Sunday:Closed</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <hr class="light">
+        <h5 style="font-size: 23px;font-family:Athiti;">Service Area</h5>
+        <hr class="light">
+        <p style="font-size: 22px;font-family:Athiti; ">Akola,Maharashtra, 444001</p>
+        <p style="font-size: 22px;font-family:Athiti;">Shegaon,Maharashtra</p>
+        <p style="font-size: 22px;font-family:Athiti;">Khamgaon,Maharashtra</p>
+      </div>
+      </div>
+  </div>
+  </footer>
+  <div class="theend container-fluid">
+  	<div class="row text-center">
+      <div class="col-12">
+        <h4 style="font-family:Athiti;">&copy; Web Creations.All Rights Reserved.<br> Created by Web Creation<br> 2019</h4>
+       </div>
+   </div>
+</div>
+    
+
+
+	
+</section>
+
+
+
+
+
+
+
+
+
+<!--srollspy-->
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+
+<!--register form-->
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+
+<!--Bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--Bootstrap End-->
+
+</body>
+</html>
